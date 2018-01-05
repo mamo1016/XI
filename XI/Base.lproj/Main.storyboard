@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="372" y="32.833583208395808"/>
         </scene>
-        <!--First View Controller-->
+        <!--View Controller-->
         <scene sceneID="iYt-qC-jlq">
             <objects>
-                <viewController id="BQg-bS-T9T" customClass="FirstViewController" customModule="XI" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="BQg-bS-T9T" customClass="ViewController" customModule="XI" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pV0-Lf-OhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="336" y="831"/>

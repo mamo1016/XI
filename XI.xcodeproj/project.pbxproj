@@ -21,6 +21,7 @@
 		041190051FBC65D400FE4753 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041190041FBC65D400FE4753 /* SetViewController.swift */; };
 		041C92061FBE93100077FBB4 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C92051FBE93100077FBB4 /* button.swift */; };
 		049777AF1FEA60D200D8A582 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049777AE1FEA60D200D8A582 /* FirstViewController.swift */; };
+		04FAB9EB1FFFB712007D4058 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAB9EA1FFFB712007D4058 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		041190041FBC65D400FE4753 /* SetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		041C92051FBE93100077FBB4 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 		049777AE1FEA60D200D8A582 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		04FAB9EA1FFFB712007D4058 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				041190041FBC65D400FE4753 /* SetViewController.swift */,
 				041C92051FBE93100077FBB4 /* button.swift */,
 				049777AE1FEA60D200D8A582 /* FirstViewController.swift */,
+				04FAB9EA1FFFB712007D4058 /* testViewController.swift */,
 			);
 			path = XI;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				04118FD21FBC441300FE4753 /* ViewController.swift in Sources */,
 				041C92061FBE93100077FBB4 /* button.swift in Sources */,
 				041190051FBC65D400FE4753 /* SetViewController.swift in Sources */,
+				04FAB9EB1FFFB712007D4058 /* testViewController.swift in Sources */,
 				049777AF1FEA60D200D8A582 /* FirstViewController.swift in Sources */,
 				04118FD01FBC441300FE4753 /* AppDelegate.swift in Sources */,
 				0400AE551FE7B4B300227D97 /* SecondViewController.swift in Sources */,

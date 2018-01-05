@@ -34,10 +34,6 @@ class ViewController: UIViewController {
         // 移動先のViewを定義する
 //        let secondViewController = SecondViewController()
         let TestViewController = testViewController()
-        // SecondViewに移動する.
-//        self.navigationController?.pushViewController(secondViewController, animated: true)
-//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "")
         self.navigationController?.pushViewController(TestViewController, animated: true)
 
     }

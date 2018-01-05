@@ -27,6 +27,7 @@ class testViewController: UIViewController , UIPickerViewDelegate, UIPickerViewD
         "堀 未央奈",
         "松村 沙友理",
         "若月 佑美"]
+    //uuuuu
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         myButton.backgroundColor = UIColor.orange
         myButton.layer.masksToBounds = true
         myButton.setTitle("TimeSelect", for: .normal)
-        myButton.layer.cornerRadius = 20.0
-        myButton.layer.position = CGPoint(x: self.view.bounds.width/2, y:200)
         myButton.addTarget(self, action: #selector(ViewController.onClickMyButton(sender: )), for: .touchUpInside)
         // ボタンをViewに追加する.
         self.view.addSubview(myButton);

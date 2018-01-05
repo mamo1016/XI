@@ -22,6 +22,7 @@
 		041C92061FBE93100077FBB4 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C92051FBE93100077FBB4 /* button.swift */; };
 		049777AF1FEA60D200D8A582 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049777AE1FEA60D200D8A582 /* FirstViewController.swift */; };
 		04FAB9EB1FFFB712007D4058 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAB9EA1FFFB712007D4058 /* testViewController.swift */; };
+		7A66FBA31FFFDAD500A134ED /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A66FBA21FFFDAD500A134ED /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		041C92051FBE93100077FBB4 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 		049777AE1FEA60D200D8A582 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		04FAB9EA1FFFB712007D4058 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		7A66FBA21FFFDAD500A134ED /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A66FBA31FFFDAD500A134ED /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 				04118FE61FBC441300FE4753 /* XITests */,
 				04118FF11FBC441300FE4753 /* XIUITests */,
 				04118FCD1FBC441300FE4753 /* Products */,
+				7A66FBA11FFFDAD500A134ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +153,14 @@
 			path = XIUITests;
 			sourceTree = "<group>";
 		};
+		7A66FBA11FFFDAD500A134ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A66FBA21FFFDAD500A134ED /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +171,7 @@
 				04118FC81FBC441300FE4753 /* Sources */,
 				04118FC91FBC441300FE4753 /* Frameworks */,
 				04118FCA1FBC441300FE4753 /* Resources */,
+				7A66FBA41FFFDAF000A134ED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -278,6 +291,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A66FBA41FFFDAF000A134ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04118FC81FBC441300FE4753 /* Sources */ = {
@@ -459,7 +489,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RWL9BWXDB;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.default.XI;
@@ -474,7 +508,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9RWL9BWXDB;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = XI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.default.XI;
